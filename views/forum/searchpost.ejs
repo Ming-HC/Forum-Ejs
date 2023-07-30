@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../share/head'); %>
+    <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/javascript/forum_footer.js"></script>
+        <link rel="stylesheet" href="/css/forum_footer.css">
+</head>
+
+<body>
+    <div class="header">
+        <%- include('../share/navbar'); %>
+    </div>
+    <div class="container">
+        <!-- search & post -->
+        <div class="search_post">
+            <div class="searchResult_div">
+                <span>搜尋結果：</span>
+                <span class="searchResult"></span>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="請輸入搜尋內容">
+                <select class="search_select">
+                    <option value="all">簡易搜尋</option>
+                    <option value="title">標題</option>
+                    <option value="content">內文</option>
+                </select>
+                <button id="search_submit">搜尋</button>
+            </div>
+        </div>
+        <!-- search & post end -->
+        <div id="postResult">
+
+        </div>
+        <%- include('../share/forum_footer'); %>
+    </div>
+</body>
+
+</html>

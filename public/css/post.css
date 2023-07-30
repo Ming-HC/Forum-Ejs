@@ -1,0 +1,222 @@
+body {
+    /* padding: 0; */
+    padding-bottom: 32px;
+}
+
+.container {
+    /* margin-top: 30px; */
+    margin-top: 95px;
+    width: 1000px;
+    border: 1px solid black;
+    padding-bottom: 20px;
+}
+
+.reply_floor {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+#title label {
+    color: gray;
+}
+
+h3 {
+    margin-left: 30px;
+    display: inline-block;
+}
+
+#user_info,
+#user_info+div {
+    display: inline-block;
+}
+
+#user_info {
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+#user_info img {
+    width: 200px;
+    height: 200px;
+    margin: 15px 0;
+}
+
+#user_info+div {
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+#reply_floor_div {
+    text-align: right;
+}
+
+#reply_floor_div label {
+    color: gray
+}
+#reply_floor_div+div img {
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+pre {
+    width: 100%;
+    min-height: 200px;
+    white-space: pre-wrap;
+    /*pre換行*/
+    word-wrap: break-word;
+    /*pre換行*/
+    font-size: 18px;
+}
+
+pre+label {
+    display: block;
+    text-align: right;
+    color: gray;
+}
+
+.function_div {
+    text-align: right;
+}
+input[type="button"] {
+    background-color: #F5F1F1;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.reply_div {
+    margin-top: 50px;
+}
+
+.reply_div label {
+    margin: 10px 10px 10px 7px;
+}
+
+.reply_div div {
+    text-align: center;
+}
+
+div.reply_img_div {
+    text-align: left;
+}
+
+.reply_img_div input {
+    width: 200px;
+}
+
+div.inputfile_group {
+    text-align: left;
+}
+
+.img_group {
+    display: flex;
+    max-width: 425px;
+    flex-wrap: wrap;
+}
+.img_block {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 5px;
+}
+.img_block img {
+    width: 100px;
+    height: 100px;
+}
+.img_tip {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    opacity: 0.7;
+    display: none;
+}
+.img_del {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: red;
+    opacity: 0.7;
+    display: none;
+}
+.img_block:hover .img_tip, .img_block:hover .img_del {
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+div.reply_post_submit_div {
+    padding-right: 10px;
+    text-align: right;
+}
+input[type="submit"] {
+    background-color: #F5F1F1;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* 已刪除文章css */
+.d_title h3 {
+    color: lightgray;
+}
+
+.d_floor {
+    display: flex;
+    justify-content: space-around;
+}
+
+.d_floor label {
+    color: lightgray;
+}
+
+.d_floor div {
+    display: inline-block;
+    margin-left: auto;
+}
+
+/* 已刪除文章css */
+
+@media only screen and (max-width: 770px) {
+    #user_info{
+        width: 172px;
+        height: 207px;
+    }
+    #user_info img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+    .col-12 label {
+        display: block;
+    }
+    h3 {
+        margin-left: 0;
+    }
+    .reply_floor .col-4 {
+        margin: 10px auto;
+    }
+    #user_info+div {
+        margin: 0 auto;
+    }
+    #user_info,
+    #user_info+div {
+        display: block;
+    }
+    #user_info+div {
+        width: 90%;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../share/head'); %>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/javascript/forum_footer.js"></script>
+        <link rel="stylesheet" href="/css/forum_footer.css">
+</head>
+
+<body>
+    <div class="header">
+        <%- include('../share/navbar'); %>
+    </div>
+    <div class="container">
+        <div id="floorResult">
+
+        </div>
+        <form action="" method="post" enctype="multipart/form-data" class="reply_form">
+            <div class="reply_div">
+                <label>回覆：</label>
+                <div class="reply_img_div">
+                    <div class="inputfile_group">
+                        <input type="file" name="imageurl" accept="image/*" onchange=handleFiles(this) />
+                    </div>
+                    <div class="img_group">
+                        <div class="img_block"><img src="/image/forum/upload_image_demo.png">
+                            <div class="img_tip" onmouseenter=hoverimg(this) onmouseleave=leaveimg(this)
+                                onclick=delimg(this)></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reply_content">
+                    <textarea cols="60" rows="7" name="content"></textarea>
+                </div>
+                <div class="reply_post_submit_div">
+                    <input type="submit" value="送出" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <%- include('../share/forum_footer'); %>
+</body>
+
+</html>

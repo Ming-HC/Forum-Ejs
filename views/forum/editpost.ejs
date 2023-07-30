@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../share/head'); %>
+</head>
+
+<body>
+    <div class="header">
+        <%- include('../share/navbar'); %>
+    </div>
+    <div class="container_cancelbs">
+        <form action="" method="post" enctype="multipart/form-data" class="editpost_form">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="title"><label>請選擇主題分類：</label></td>
+                        <td><select id="classResult" name="class_name"></select></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label>請輸入文章標題：</label></td>
+                        <td><input type="text" name="title"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="inputfile_group"><input type="file" name="imageurl" accept="image/*" onchange=handleFiles(this) /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="img_group"><div class="img_block"><img src="/image/forum/upload_image_demo.png"><div class="img_tip" onmouseenter=hoverimg(this) onmouseleave=leaveimg(this) onclick=delimg(this)></div></div></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label>請輸入文章內容：</label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><textarea cols="50" rows="15" name="content"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="submit"><button>送出</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

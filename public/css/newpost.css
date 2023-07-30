@@ -1,0 +1,66 @@
+.container_cancelbs {
+    margin-top: 95px;
+}
+
+table {
+    margin: 0 auto 0 auto;
+}
+
+.title {
+    text-align: right;
+}
+
+input[type="file"] {
+    width: 200px;
+}
+.img_group {
+    display: flex;
+    max-width: 425px;
+    flex-wrap: wrap;
+}
+.img_block {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 5px;
+}
+.img_block img {
+    width: 100px;
+    height: 100px;
+}
+.img_tip {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    opacity: 0.7;
+    display: none;
+}
+.img_del {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: red;
+    opacity: 0.7;
+    display: none;
+}
+.img_block:hover .img_tip, .img_block:hover .img_del {
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+#submit {
+    text-align: right;
+}
+
+#submit button {
+    background-color: white;
+}

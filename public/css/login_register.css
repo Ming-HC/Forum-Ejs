@@ -1,0 +1,82 @@
+.container {
+    margin-top: 95px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header div {
+    display: inline-block;
+    width: 40%;
+    border-bottom: 5px solid lightgray;
+}
+
+.header div label {
+    color: lightgray;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.imgcontainer {
+    text-align: center;
+}
+
+.imgcontainer img {
+    width: 200px;
+    height: 200px;
+}
+
+.input_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+    height: 300px;
+    margin: 20px auto;
+    /* border: 1px dashed lightblue; */
+    border: 1px solid black;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.input_info div label {
+    display: inline-block;
+    /* width: 95px; */
+}
+
+input[type="file"] {
+    /* width: 182px; */
+    font-size: 14px;
+}
+
+input[name="uname"]+label,
+input[name="psw"]+label,
+#psw+label {
+    width: auto;
+    /* display: block; */
+    color: red;
+    font-size: 14px;
+}
+
+input[type="submit"],
+input[type="button"] {
+    background-color: rgb(228, 152, 11);
+    color: white;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+}
+
+.cancelbtn {
+    float: right;
+}
+
+.void {
+    height: 50px;
+}

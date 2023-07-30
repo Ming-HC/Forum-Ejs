@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../share/head'); %>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="/javascript/forum_footer.js"></script>
+        <link rel="stylesheet" href="/css/forum_footer.css">
+</head>
+
+<body>
+    <div class="header">
+        <%- include('../share/navbar'); %>
+    </div>
+    <div class="container">
+        <!-- search & post -->
+        <div class="search_post">
+            <div class="post">
+                <a href="/forum/view/newpost"><label>發佈文章</label></a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="請輸入搜尋內容">
+                <select class="search_select">
+                    <option value="all">簡易搜尋</option>
+                    <option value="title">標題</option>
+                    <option value="content">內文</option>
+                </select>
+                <button id="search_submit">搜尋</button>
+            </div>
+        </div>
+        <!-- search & post end -->
+        <!-- subject -->
+        <ul class="subject nav nav-tabs" id="myTab" role="tablist">
+
+        </ul>
+        <!-- subjext end -->
+        <!-- article -->
+        <!-- <div class="posttitle">
+            <div><label>主題</label></div>
+            <div><label>預覽圖</label></div>
+            <div><label>標題 / 內文</label></div>
+            <div><label>發文者</label></div>
+            <div><label>最新回覆</label></div>
+        </div> -->
+        <div id="postResult">
+
+        </div>
+        <!-- article end -->
+        <!-- footer -->
+        <%- include('../share/forum_footer'); %>
+            <!-- footer end -->
+    </div>
+</body>
+
+</html>

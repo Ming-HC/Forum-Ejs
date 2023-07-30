@@ -1,0 +1,340 @@
+body {
+    padding: 0 0 20px 0;
+}
+.container {
+    margin-top: 95px;
+    width: 1000px;
+}
+
+.search_post div {
+    display: inline-block;
+}
+
+.searchResult_div {
+    height: 28px;
+    line-height: 28px;
+}
+
+.search {
+    float: right;
+}
+.search>input {
+    width: 130px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid lightgray;
+    margin-right: 10px;
+}
+
+.search>input:hover,
+.search>input:focus {
+    width: 250px;
+}
+
+#search_submit {
+    width: 50px;
+    background-color: #F5F1F1;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.post>button {
+    border-radius: 10px;
+}
+.search_select {
+    height: 26px;
+    background-color: #F5F1F1;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.search_post {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid lightgray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.posttitle div {
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#postResult>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* border-bottom: 1px solid lightgray; */
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+#postResult>div:nth-child(even) {
+    background-color: #F5F1F1;
+}
+
+#postResult div div:not(:last-child),
+.posttitle div:not(:last-child) {
+    margin-right: 20px;
+}
+.posttitle div:nth-of-type(1) {
+    margin-right: 15px;
+}
+.posttitle div:nth-of-type(1),
+#postResult div div:nth-of-type(1) {
+    width: 64px;
+    
+}
+.posttitle div:nth-of-type(2) {
+    width: 130px;
+}
+
+#postResult div div:nth-of-type(2) {
+    width: 130px;
+    margin-right: 20px;
+}
+#postResult img {
+    width: 130px;
+    aspect-ratio: 16/9;
+    /* 額外確保圖片縮放時會有最好的效果 */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.posttitle div:nth-of-type(3) {
+    width: 190px;
+    margin-right: 25px;
+}
+
+#postResult div div:nth-of-type(3) {
+    align-self: flex-start;
+}
+
+#postResult div div:nth-of-type(3) {
+    text-align: left;
+    width: 190px;
+}
+
+#postResult div div:nth-of-type(3) a,
+#postResult div div:nth-of-type(3) label {
+    display: block;
+}
+
+
+#postResult div div:nth-of-type(3) a {
+    font-size: 18px;
+    font-weight: 900;
+}
+#postResult div div:nth-of-type(3)>a {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+#postResult div div:nth-of-type(3)>label {
+    color: gray;
+    height: 42px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+.posttitle div:nth-of-type(4) {
+    width: 105px;
+    margin-right: 25px;
+}
+
+#postResult div div:nth-of-type(4) {
+    margin: 0;
+}
+
+#postResult div div:nth-of-type(4) div {
+    width: 130px;
+    display: block;
+    margin: 0;
+    /* text-align: center; */
+}
+#postResult div div:nth-of-type(4) div:first-child label:first-child, #postResult div div:nth-of-type(5) label:first-child {
+    color: rgb(13, 110, 253);
+}
+#postResult div div:nth-of-type(3) a label:hover, #postResult div div:nth-of-type(4) div:first-child label:first-child:hover, #postResult div div:nth-of-type(5) label:first-child:hover {
+    cursor: pointer;
+}
+
+.posttitle div:nth-of-type(5) {
+    width: 100px;
+}
+#postResult div div:nth-of-type(5) {
+    height: 52px;
+}
+#postResult div div:nth-of-type(5) label {
+    display: block;
+}
+
+#postResult div div {
+    display: inline-block;
+}
+
+#postResult div div div {
+    height: 24px;
+}
+
+#postResult div div .views_reply_div {
+    height: 28px;
+    color: gray;
+}
+
+.views_reply_div i {
+    margin-right: 5px;
+}
+
+.views_reply_div .fa.fa-eye+label {
+    margin-right: 10px;
+}
+
+#postResult .views_reply_div .views,
+#postResult .views_reply_div .reply {
+    position: relative;
+    display: inline-block;
+    min-width: 60px;
+    width: auto;
+    height: 28px;
+    margin: 0;
+}
+
+.views label,
+.reply label {
+    font-size: 14px;
+}
+
+.views:hover::before {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    content: '瀏覽數';
+}
+
+.reply:hover::before {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    content: '回覆數';
+}
+
+#postResult div div:nth-of-type(5)>label {
+    color: gray;
+}
+
+
+.page {
+    text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+    #postResult div div:nth-of-type(3) {
+        width: 470px !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #postResult div div:nth-of-type(3) {
+        width: 430px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* .container {
+        max-width: 95%;
+    } */
+}
+@media only screen and (min-width: 576px) {
+    /* .container {
+        max-width: 95%;
+    } */
+}
+@media only screen and (max-width: 767px) {
+            
+    /* .posttitle div:nth-of-type(4), .posttitle div:nth-of-type(5) {
+        display: none;
+    } */
+    .posttitle div {
+        display: none;
+    }
+    #postResult>div {
+        align-items: initial;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    #postResult div div {
+        margin-right: 0;
+        align-self: flex-start;
+    }
+    #postResult div div:nth-of-type(1) {
+        /* flex: 10%; */
+        order: 1;
+    }
+
+    #postResult div div:nth-of-type(2) {
+        /* flex: 30%; */
+        order: 3;
+        position: relative;
+    }
+    #postResult div div:nth-of-type(3) {
+        flex: 60%;
+        order: 4;
+        margin-right: 0;
+    }
+    #postResult div div:nth-of-type(4) {
+        order: 2;
+        flex: 60%;
+        height: 24px;
+    }
+    .views_reply_div {
+        position: absolute;
+        bottom: -75px;
+        right: 80px;
+    }
+    #postResult div div:nth-of-type(5) {
+        order: 5;
+        margin-left: auto;
+        height: 24px;
+    }
+    #postResult div div:nth-of-type(5) label:first-child {
+        visibility: hidden;
+    }
+    #postResult div div:nth-of-type(5) label {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 517px) {
+    #postResult div div:nth-of-type(3) {
+        flex: 50%;
+    }
+    .search {
+        float: initial;
+    }
+}
+@media only screen and (max-width: 447px) {
+    #postResult div div:nth-of-type(4) {
+        flex: 50%;
+    }
+}
+@media only screen and (max-width: 326px) {
+    #postResult div div:nth-of-type(3) {
+        flex: 30%;
+    }
+}
+
